@@ -2,7 +2,6 @@ import { View, Text, Image } from "react-native";
 import React from "react";
 
 const OrderListItem = ({ order }) => {
-  console.log(order);
   return (
     <View
       style={{
