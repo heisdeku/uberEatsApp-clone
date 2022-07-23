@@ -6,7 +6,7 @@ import DishListItem from "../../components/DishListItem";
 import RestaurantHeader from "./Header";
 import { styles } from "./styles";
 
-const restaurant = restaurants[0];
+const restaurant = restaurants[2];
 const RestaurantDetailsScreen = () => {
   return (
     <View style={styles.page}>

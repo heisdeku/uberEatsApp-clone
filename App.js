@@ -3,11 +3,12 @@ import { StyleSheet, View } from "react-native";
 //screens
 import HomeScreen from "./src/screens/HomeScreen";
 import RestaurantDetailsScreen from "./src/screens/RestaurantDetailsScreen";
+import DishDetailsScreen from "./src/screens/DishDetailsScreen";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <RestaurantDetailsScreen />
+      <DishDetailsScreen />
       <StatusBar style="auto" />
     </View>
   );

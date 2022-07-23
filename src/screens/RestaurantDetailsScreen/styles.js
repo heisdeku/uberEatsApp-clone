@@ -25,4 +25,9 @@ export const styles = StyleSheet.create({
     color: "#525252",
     fontSize: 15,
   },
+  menuTitle: {
+    marginTop: 20,
+    fontSize: 18,
+    letterSpacing: 0.7,
+  },
 });
