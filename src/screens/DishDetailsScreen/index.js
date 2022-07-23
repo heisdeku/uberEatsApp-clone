@@ -39,7 +39,8 @@ const DishDetailsScreen = () => {
       </View>
       <View style={styles.button}>
         <Text style={styles.buttonText}>
-          Add {quantity} to Basket (${(dish.price * quantity).toFixed(2)})
+          Add {quantity} to Basket &#8226; $
+          {(dish.price * quantity).toFixed(2)}
         </Text>
       </View>
     </View>
