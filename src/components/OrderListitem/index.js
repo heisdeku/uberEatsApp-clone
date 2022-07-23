@@ -1,9 +1,11 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, Pressable } from "react-native";
 import React from "react";
-
+import { useNavigation } from "@react-navigation/native";
 const OrderListItem = ({ order }) => {
+  const navigation = useNavigation();
   return (
-    <View
+    <Pressable
+      onPress={() => navigation.navigate("Order", { id: order.id })}
       style={{
         flexDirection: "row",
         margin: 10,
@@ -24,7 +26,7 @@ const OrderListItem = ({ order }) => {
         <Text style={{ marginVertical: 5 }}>3 Items &#8226; $38.45</Text>
         <Text>2 days ago &#8226; {order.status}</Text>
       </View>
-    </View>
+    </Pressable>
   );
 };
 
